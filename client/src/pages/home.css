@@ -64,11 +64,11 @@ input::placeholder {
 .score button {
   margin-top: 1rem;
   width: 100%;
-  padding: 12px;
+  padding:9px 12px;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background: #ff00ff;
   color: #fff;
   cursor: pointer;
@@ -98,26 +98,44 @@ input::placeholder {
 }
 
 .home .outcomes {
+  margin-top: 2rem;
 
-  margin-top:2rem;
-  
   max-width: 600px;
 
   width: 100%;
-}
 
+  max-height:400px;
+
+  overflow-y:scroll;
+
+}
 
 .home .outcomes table {
   width: 100%;
 
-  border-bottom:1px solid #ccc;
+  border-collapse: collapse;
+}
 
+.home .outcomes table thead {
+  border-bottom: 1px solid #ccc;
+  background: #ff00ff;
 }
 
 
+.home .outcomes table thead p{
+    font-weight:800;
+    letter-spacing:2px;
+}
+.home .outcomes table thead td {
+  padding: 10px 1rem;
+}
 
-.home .outcomes table thead td{
+.home .outcomes table td {
+  text-align: center;
+}
 
-    text-align:center;
-
+.home .outcomes table tbody td {
+  width: 100px;
+  padding: 10px 1rem;
+  border: 1px solid #ccc;
 }
